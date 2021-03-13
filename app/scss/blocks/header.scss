@@ -1,0 +1,34 @@
+.menu {
+  &__list {
+    display: flex;
+    justify-content: center;
+    padding: 43px 0 21px;
+  }
+
+  &__list-item {
+    &+& {
+      margin-left: 35px;
+    }
+  }
+
+  &__list-link {
+    padding: 0 9px 22px;
+
+    @extend %lato-700;
+    font-size: 14px;
+    line-height: 1.35;
+
+    color: #909090;
+
+    border-bottom: 4px solid transparent;
+
+    transition: color .3s, border-bottom-color .3s;
+
+    &:hover {
+      border-bottom-color: $accent;
+
+      @extend %lato-700;
+      color: $title;
+    }
+  }
+}
