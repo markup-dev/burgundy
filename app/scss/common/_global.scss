@@ -30,3 +30,11 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.title {
+  @extend %georgia-400;
+  font-size: 32px;
+  line-height: 1.18;
+
+  color: $title;
+}

@@ -1,0 +1,93 @@
+.reasons {
+  padding: 100px 0 70px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 326px;
+  }
+
+  &__box {
+    max-width: 540px;
+  }
+
+  &__link {
+    @extend %lato-700;
+
+    color: $accent;
+  }
+
+  &__stat {
+    padding: 70px 80px 20px;
+  }
+
+  &__stat-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__stat-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    padding-top: 140px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 100px;
+      height: 100px;
+      width: 100px;
+
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: auto;
+    }
+
+    &--route {
+      &::before {
+        background-image: url('../../images/icons/route.svg');
+      }
+    }
+
+    &--restaurant {
+      &::before {
+        background-image: url('../../images/icons/restaurant.svg');
+      }
+    }
+
+    &--transport {
+      &::before {
+        background-image: url('../../images/icons/transport.svg');
+      }
+    }
+
+    &--interface {
+      &::before {
+        background-image: url('../../images/icons/interface.svg');
+      }
+    }
+  }
+
+  &__stat-num {
+    @extend %lato-700;
+    font-size: 22px;
+    line-height: 1.36;
+
+    color: $title;
+  }
+
+  &__stat-text {
+    @extend %lato-700;
+    font-size: 14px;
+    line-height: 1.21;
+
+    color: #909090;
+  }
+}
